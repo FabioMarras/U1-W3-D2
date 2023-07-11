@@ -102,7 +102,9 @@
         */
 
       const changePcontent = function () {
-        let parag = document.querySelectorAll("div p");
+        let parag = document.querySelectorAll("div > p");
+        parag.forEach((p) => (p.innerText = "cambia il testo dei p"));
+        console.log(parag);
       };
       changePcontent();
 
