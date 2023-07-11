@@ -132,12 +132,13 @@
          Scrivi una funzione che aggiunga un secondo paragrafo al primo div
       */
 
-      /*const addParagraph = function () {
-        const xx = document.createElement("p");
-        const t = document.createTextNode("ciaociao");
-        xx.appendChild(t);
+      const addParagraph = function () {
+        const div1 = document.querySelector("div");
+        const parag = document.createElement("p");
+        parag.innerText = "Nuovo paragrafo";
+        div1.appendChild(parag);
       };
-      addParagraph(); */
+      addParagraph();
 
       /* ESERCIZIO 7
          Scrivi una funzione che faccia scomparire la prima lista non ordinata
